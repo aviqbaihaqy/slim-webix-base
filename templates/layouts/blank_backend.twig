@@ -1,0 +1,54 @@
+{% extends 'layouts/main.twig' %}
+
+{% block title %}_blank Template{% endblock %}
+
+{% block after_styles %}
+  {{ parent() }}
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/webix/webix.css') }}">
+{% endblock %}
+
+{% block body_class %} {{ parent() }} header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden{% endblock %}
+{% block content %}
+
+{% block main_header %}
+{% include 'layouts/partials/header_backend.twig' with {
+    user_image : 'assets/img/avatars/6.jpg',
+    profile_url: 'my-account'
+} %}
+{% endblock %}
+
+<div class="app-body">
+
+  {% block main_sidebar %}
+    {% include 'layouts/partials/sidebar_backend.twig' with {profile_url : 'my-account'} %}
+  {% endblock %}
+
+  <!-- Main content -->
+  <main class="main">
+    {% block main_breadcrumb %}
+      {% include 'layouts/partials/breadcrumb.twig' %}
+    {% endblock %}
+
+    <div class="container-fluid">
+      <div class="animated fadeIn">
+        {% include 'layouts/partials/flash.twig' %}
+      </div>
+      {% block container %}{% endblock %}
+    </div>
+  </main>
+</div>
+
+{% include 'layouts/partials/footer_backend.twig' %}
+{% endblock %}
+
+{% block after_script %}
+
+<!-- CoreUI main scripts -->
+<script src="{{ asset('assets/js/app.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/vendor/webix/webix.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/vendor/webix/slim_proxy.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/vendor/webix/handle_processing.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/vendor/webix/decorator.js') }}"></script>
+<!-- <script type="text/javascript" src="//cdn.webix.com/edge/webix_debug.js"></script> -->
+
+{% endblock %}

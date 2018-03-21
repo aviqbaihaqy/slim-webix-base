@@ -1,0 +1,12 @@
+.env
+vendor/
+node_modules/
+public/assets/lib/
+var/cache/*
+!var/cache/.gitkeep
+var/log/*
+!var/log/.gitkeep
+public/assets/css/*
+!public/assets/css/.gitkeep
+public/assets/js/*
+!public/assets/js/.gitkeep

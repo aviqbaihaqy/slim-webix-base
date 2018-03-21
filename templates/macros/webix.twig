@@ -1,0 +1,13 @@
+{% macro btn_icon_edit(url, user_id, auth) %} {% spaceless %}
+
+{% if user_id != '1' and auth.hasAccess('user.edit') %}
+<a href='{{ url }}'>
+  <span style=' cursor:pointer;' class='webix_icon fa-pencil'></span>
+</a>
+{% endif %}
+
+{% endspaceless %} {% endmacro %}
+
+{% macro btn_icon_remove(hidden, disable) %} {% spaceless %}
+<span style='cursor:pointer;' class='webix_icon text-danger fa-trash-o'></span>
+{% endspaceless %} {% endmacro %}

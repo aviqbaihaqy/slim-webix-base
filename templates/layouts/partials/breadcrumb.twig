@@ -1,0 +1,31 @@
+<!-- Breadcrumb -->
+<ol class="breadcrumb">
+
+    {#{{ breadCrumbs | json_encode }}#}
+    {% for crumbs in breadCrumbs %}
+        <li class="breadcrumb-item">
+            <a href="{{ path_for(crumbs.uri|e) }}">{{ crumbs.route }}</a>
+        </li>
+    {% endfor %}
+
+    {% if current_pages is not empty %}
+        <li class="breadcrumb-item active">{{ current_pages|raw }}</li>
+    {% endif %}
+
+    <!-- Breadcrumb Menu-->
+    {% block breadcrum_menu %}
+    <li class="breadcrumb-menu d-md-down-none">
+        <div class="btn-group" role="group" aria-label="Button group">
+            <a class="btn" href="#">
+                <i class="icon-speech"></i>
+            </a>
+            <a class="btn" href="./">
+                <i class="icon-graph"></i>
+                &nbsp;Dashboard</a>
+            <a class="btn" href="#">
+                <i class="icon-settings"></i>
+                &nbsp;Settings</a>
+        </div>
+    </li>
+    {% endblock %}
+</ol>

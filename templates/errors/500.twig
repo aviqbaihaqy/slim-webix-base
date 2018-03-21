@@ -1,0 +1,52 @@
+{% embed "layouts/blank_error.twig" with {'current_pages' : 'error_500'} %}
+
+  {% block title %}
+    {{config['site-name']}}
+  {% endblock %}
+
+  {% block container %}
+    <div class="g-font-size-180 g-font-size-240--sm g-font-size-420--lg g-line-height-1 g-font-weight-200 g-color-gray-dark-v2">500</div>
+
+    <div class="g-absolute-centered">
+        <h1 class="g-font-weight-200 g-mb-20">Application Error</h1>
+        <p class="g-color-white-opacity-0_6 g-font-size-18">Oops! Looks like you followed a&nbsp;bad&nbsp;link.</p>
+        <p class="g-color-white-opacity-0_6 g-font-size-18">If you think this is a problem with us, please&nbsp;<a href="#!" class="g-color-white g-color-primary--hover g-text-no-underline--hover">tell us</a>.</p>
+        <p class="g-color-white-opacity-0_6 g-font-size-18 mb-0">Here is a link to the
+            <a href="{{path_for('home')}}" class="g-color-white g-color-primary--hover g-text-no-underline--hover">home page</a>.</p>
+    </div>
+
+    <!-- Basic Table -->
+    {% if displayErrorDetails %}
+        <div class="card g-brd-lightred rounded-0 mx-auto g-mx-100 ">
+            <h3 class="card-header g-bg-lightred g-brd-transparent g-color-white g-font-size-16 rounded-0 mb-0">
+                <i class="fa fa-tasks g-mr-5"></i>
+                Error Message
+            </h3>
+
+            <div class="card-block g-pa-15">
+                <p class="card-text g-color-black">
+                    <b>{{ exception.getMessage() }}</b>
+                </p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-condensed u-table--v1 mb-0 g-color-gray-dark-v4">
+                    {% for item in exception.getTrace() %}
+                        <tr>
+                            <td>
+                                {% for key2, item2 in item %}
+                                    <b>{{key2|capitalize}}:</b>
+                                    {{item2}}
+                                {% endfor %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    {% endif %}
+    <!-- End Basic Table -->
+  {% endblock %}
+
+{% endembed %}
+

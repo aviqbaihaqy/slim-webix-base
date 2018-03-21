@@ -1,0 +1,51 @@
+{% extends 'layouts/main.twig' %}
+
+{% block title %}Error{% endblock %}
+
+{% block main_styles %}
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+<!-- CSS Global Compulsory -->
+<link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/bootstrap.min.css') }}">
+{% endblock %}
+
+{% block after_styles %}
+<!-- CSS Unify -->
+<link rel="stylesheet" href="{{ asset('assets/css/unify-core.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/unify-components.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/unify-globals.css') }}">
+
+{% endblock %}
+
+{% block body_class %} g-bg-gray-dark-v1 g-color-white {% endblock %}
+
+{% block content %}
+
+<main class="g-height-100x g-min-height-100vh g-flex-centered g-pa-15">
+    <div class="text-center g-flex-centered-item g-position-rel">
+        {% block container %}
+          <div class="g-font-size-180 g-font-size-240--sm g-font-size-420--lg g-line-height-1 g-font-weight-200 g-color-gray-dark-v2">404</div>
+          <div class="g-absolute-centered">
+              <h1 class="g-font-weight-200 g-mb-20">Page&nbsp;Not&nbsp;Found</h1>
+              <p class="g-color-white-opacity-0_6 g-font-size-18">Oops! Looks like you followed a&nbsp;bad&nbsp;link.</p>
+              <p class="g-color-white-opacity-0_6 g-font-size-18">If you think this is a problem with us, please&nbsp;<a href="#!" class="g-color-white g-color-primary--hover g-text-no-underline--hover">tell us</a>.</p>
+              <p class="g-color-white-opacity-0_6 g-font-size-18 mb-0">Here is a link to the
+                  <a href="#!" class="g-color-white g-color-primary--hover g-text-no-underline--hover">home page</a>.</p>
+          </div>
+      {% endblock %}
+
+    </div>
+
+
+</main>
+
+{% endblock %}
+
+{% block main_script %}
+<!-- JS Global Compulsory -->
+<script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/jquery-migrate/jquery-migrate.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/jquery.easing/js/jquery.easing.js') }}"></script>
+<script src="{{ asset('assets/vendor/js/popper.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/bootstrap/bootstrap.min.js') }}"></script>
+{% endblock %}

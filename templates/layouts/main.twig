@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Sistem Informasi">
+      <meta name="author" content="Lukasz Holeczek">
+      <meta name="keyword" content="Sistem Informasi">
+      <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}">
+      <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
+
+      {% set maintitle = "DiKampus" %}
+      {% if block('title')is defined %}
+        <title>{{ block('title')|raw }} - {{ maintitle }}</title>
+      {% else %}
+        <title>{{ maintitle }}</title>
+      {% endif %}
+
+      {% block main_styles %}
+        <!-- Icons -->
+        <link href="{{ asset('assets/vendor/css/font-awesome.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/vendor/css/simple-line-icons.min.css') }}" rel="stylesheet">
+      {% endblock %}
+
+        <!-- Styles required by this views -->
+      {% block after_styles %}
+        <!-- Main styles for this application -->
+        <link href="{{ asset('assets/css/style.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/custom.css') }}" rel="stylesheet">
+
+      {% endblock %}
+
+  </head>
+
+  <body class="{% block body_class %}app{% endblock %}">
+
+    {% block content %}{% endblock %}
+
+    {% block main_script %}
+      <!-- Bootstrap and necessary plugins -->
+      <script src="{{ asset('assets/vendor/js/jquery.min.js') }}"></script>
+      <script src="{{ asset('assets/vendor/js/popper.min.js') }}"></script>
+      <script src="{{ asset('assets/vendor/js/bootstrap.min.js') }}"></script>
+
+    {% endblock %}
+
+    {% block after_script %}{% endblock %}
+
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<header class="app-header navbar">
+    <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <ul class="nav navbar-nav ml-auto mr-5">
+      {% block header_menu %}
+        <li class="nav-item d-md-down-none">
+            <a class="nav-link" href="#">
+                <i class="icon-bell"></i>
+                <span class="badge badge-pill badge-danger">5</span></a>
+        </li>
+        <li class="nav-item d-md-down-none">
+            <a class="nav-link" href="#">
+                <i class="icon-list"></i>
+            </a>
+        </li>
+        <li class="nav-item d-md-down-none">
+            <a class="nav-link" href="#">
+                <i class="icon-location-pin"></i>
+            </a>
+        </li>
+
+      {% endblock %}
+
+      {% block header_user_menu %}
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="{{asset( user_image ) }}" class="img-avatar" alt="profile">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-header text-center">
+                    <strong>Account</strong>
+                </div>
+
+                <a class="dropdown-item" href="{{ path_for(profile_url) }}">
+                    <i class="fa fa-user"></i>
+                    Profile</a>
+
+                <a class="dropdown-item" href="{{path_for('logout')}}">
+                    <i class="fa fa-lock"></i>
+                    Logout</a>
+            </div>
+        </li>
+      {% endblock %}
+
+
+    </ul>
+    <!-- <button class="navbar-toggler aside-menu-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+</header>

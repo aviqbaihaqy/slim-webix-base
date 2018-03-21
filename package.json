@@ -1,0 +1,27 @@
+{
+  "name": "slim-base",
+  "version": "4.0.0",
+  "description": "Slim PHP Micro-Framework skeleton",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awurth/Slim.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/awurth/Slim#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.3"
+  },
+  "dependencies": {
+    "semantic-ui": "^2.2.13"
+  }
+}

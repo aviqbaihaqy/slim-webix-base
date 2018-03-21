@@ -1,0 +1,93 @@
+//
+// Variables and Mixins
+//
+
+@import "variables.e-commerce";
+@import "../../../assets/include/scss/unify";
+
+p {
+  color: $g-color-text;
+}
+
+/*------------------------------------
+  Colors
+------------------------------------*/
+.g-color-text {
+  color: $g-color-text;
+}
+
+.g-color-main-light-v3 {
+  color: $g-color-main-light-v3;
+}
+
+/*------------------------------------
+  Background Colors
+------------------------------------*/
+.g-bg-main-light-v1 {
+  background-color: $g-bg-color-main-light-v1;
+}
+
+.g-bg-main-light-v2 {
+  background-color: $g-bg-color-main-light-v2;
+}
+
+.g-bg-main-light-v3 {
+  background-color: $g-bg-color-main-light-v3 !important;
+}
+
+/*------------------------------------
+  Focus state background
+------------------------------------*/
+
+.g-bg-main-light-v2--focus:focus {
+  background-color: $g-bg-color-main-light-v2;
+}
+
+/*------------------------------------
+  Border Colors
+------------------------------------*/
+.g-brd-secondary-light-v1 {
+  border-color: $g-color-secondary-light-v1 !important;
+}
+
+/*------------------------------------
+  Carousel indicators v1
+------------------------------------*/
+
+.u-carousel-indicators-v1,
+.u-carousel-indicators-v1--white {
+	li {
+    &.slick-active {
+      span {
+        background-color: $g-color-primary !important;
+      }
+    }
+  }
+
+  span {
+    background-color: darken($g-bg-color-secondary, 5%) !important;
+  }
+}
+
+.u-carousel-indicators-v1 {
+  span {
+    background-color: darken($g-bg-color-secondary, 5%) !important;
+  }
+}
+
+/*------------------------------------
+  Sliders v1
+------------------------------------*/
+
+.u-slider-v1-3.ui-slider {
+  height: 2px;
+  background: rgba($g-color-primary, .2);
+}
+
+/*------------------------------------
+  Mega Menu
+------------------------------------*/
+.hs-has-sub-menu > a::after,
+.hs-icon-arrow-bottom:before {
+  font-size: 9px;
+}
