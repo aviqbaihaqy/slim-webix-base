@@ -1,0 +1,44 @@
+/* Add here all your css styles (customizations) */
+@media (min-width: 992px) {
+  .brand-minimized .app-header.navbar .navbar-brand {
+    background-size: 40px;
+  }
+  .sidebar-minimized .sidebar .sidebar-button .nav-link{
+    position: relative;
+    padding-left: 0;
+    margin: 0;
+    white-space: nowrap;
+    border-left: 0!important;
+    overflow: hidden;
+  }
+
+}
+
+@media (max-width: 991.98px){
+  .app-header.navbar .navbar-nav .user-login {
+    display: none;
+  }
+
+  .app-header.navbar .navbar-nav {
+    margin-right: 1rem!important;
+  }
+
+}
+
+.app-header.navbar .navbar-brand {
+  background-size: 120px auto;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+}
+
+.input-clearer {
+  font-weight: bold;
+  text-decoration: none;
+}
+.input-clearer:hover, .input-clearer:focus, .input-clearer:active {
+  text-decoration: none;
+  background: #888888;
+  color: #ffffff;
+}

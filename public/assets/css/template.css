@@ -1,0 +1,265 @@
+/* Variables */
+/* Imports */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Typography */
+body,
+p {
+  line-height: 1.6em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+::-moz-selection {
+  background-color: #3bb18f;
+}
+
+::selection {
+  background-color: #3bb18f;
+}
+
+a {
+  color: #3bb18f;
+}
+
+a:hover {
+  color: #3bb18f;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: #000;
+}
+
+p {
+  color: #777;
+}
+
+/* Colors */
+.g-color-primary {
+  color: #3bb18f !important;
+}
+
+.g-color-primary--hover:hover {
+  color: #3bb18f !important;
+}
+
+.u-block-hover:hover .g-color-primary--hover, .g-color-primary--hover:hover {
+  color: #3bb18f !important;
+}
+
+.g-color-dark {
+  color: #000 !important;
+}
+
+/* Background Colors */
+.g-bg-secondary {
+  background-color: #eef1f8 !important;
+}
+
+.g-bg-primary {
+  background-color: #3bb18f !important;
+}
+
+.g-bg-primary--hover:hover {
+  background-color: #3bb18f !important;
+}
+
+.g-bg-primary--active.active,
+.active .g-bg-primary--active {
+  background-color: #3bb18f !important;
+}
+
+.g-bg-primary-opacity-0_6 {
+  background-color: rgba(59, 177, 143, 0.6) !important;
+}
+
+.g-bg-primary-opacity-0_9 {
+  background-color: rgba(59, 177, 143, 0.9) !important;
+}
+
+.g-bg-primary-opacity-0_1 {
+  background-color: rgba(59, 177, 143, 0.1) !important;
+}
+
+/* Border Color */
+.g-brd-primary {
+  border-color: #3bb18f !important;
+}
+
+.g-brd-primary--hover:hover {
+  border-color: #3bb18f !important;
+}
+
+.g-brd-primary--active.active,
+.active .g-brd-primary--active {
+  border-color: #3bb18f !important;
+}
+
+/* Button Primary */
+.u-btn-primary {
+  color: #fff;
+  background-color: #3bb18f;
+}
+
+.u-btn-primary:hover, .u-btn-primary.active {
+  border-color: #58c7a7;
+  background-color: #58c7a7;
+}
+
+.u-btn-primary:hover, .u-btn-primary:focus, .u-btn-primary.active {
+  color: #fff;
+}
+
+.u-btn-primary.g-btn-hover-reset:hover, .u-btn-primary.g-btn-hover-reset.active {
+  background-color: #3bb18f;
+  border-color: #3bb18f;
+}
+
+.u-btn-primary.u-btn-hover-v1-1 {
+  overflow: hidden;
+}
+
+.u-btn-primary.u-btn-hover-v1-1::after, .u-btn-primary.u-btn-hover-v1-1:hover::after {
+  background-color: #45c19d;
+}
+
+.u-btn-primary.u-btn-hover-v1-1:hover {
+  background-color: #3bb18f;
+  overflow: hidden;
+}
+
+.u-btn-primary.u-btn-hover-v1-2 {
+  overflow: hidden;
+}
+
+.u-btn-primary.u-btn-hover-v1-2::after, .u-btn-primary.u-btn-hover-v1-2:hover::after {
+  background-color: #45c19d;
+}
+
+.u-btn-primary.u-btn-hover-v1-2:hover {
+  background-color: #3bb18f;
+  overflow: hidden;
+}
+
+.u-btn-primary.u-btn-hover-v1-3 {
+  overflow: hidden;
+}
+
+.u-btn-primary.u-btn-hover-v1-3::after, .u-btn-primary.u-btn-hover-v1-3:hover::after {
+  background-color: #45c19d;
+}
+
+.u-btn-primary.u-btn-hover-v1-3:hover {
+  background-color: #3bb18f;
+  overflow: hidden;
+}
+
+.u-btn-primary.u-btn-hover-v1-4 {
+  overflow: hidden;
+}
+
+.u-btn-primary.u-btn-hover-v1-4::after, .u-btn-primary.u-btn-hover-v1-4:hover::after {
+  background-color: #45c19d;
+}
+
+.u-btn-primary.u-btn-hover-v1-4:hover {
+  background-color: #3bb18f;
+  overflow: hidden;
+}
+
+.u-btn-primary.u-btn-hover-v2-1 {
+  overflow: hidden;
+}
+
+.u-btn-primary.u-btn-hover-v2-1::after, .u-btn-primary.u-btn-hover-v2-1:hover::after {
+  background-color: #45c19d;
+}
+
+.u-btn-primary.u-btn-hover-v2-1:hover {
+  background-color: #3bb18f;
+  overflow: hidden;
+}
+
+.u-btn-primary.u-btn-hover-v2-2 {
+  overflow: hidden;
+}
+
+.u-btn-primary.u-btn-hover-v2-2::after, .u-btn-primary.u-btn-hover-v2-2:hover::after {
+  background-color: #45c19d;
+}
+
+.u-btn-primary.u-btn-hover-v2-2:hover {
+  background-color: #3bb18f;
+  overflow: hidden;
+}
+
+/*------------------------------------
+  Carousel indicators v1
+------------------------------------*/
+.u-carousel-indicators-v1 li.slick-active span,
+.u-carousel-indicators-v1--white li.slick-active span {
+  background-color: #3bb18f;
+}
+
+.u-carousel-indicators-v1 span,
+.u-carousel-indicators-v1--white span {
+  background-color: #dce2f1;
+}
+
+.u-carousel-indicators-v1 span {
+  background-color: #dce2f1;
+}
+
+/*------------------------------------
+  Checkboxes v4
+------------------------------------*/
+.u-check input[type="checkbox"]:checked + .u-check-icon-checkbox-v4,
+.u-check input[type="checkbox"]:checked + .u-check-icon-radio-v4,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-checkbox-v4,
+.u-check input[type="checkbox"]:checked + * .u-check-icon-radio-v4,
+.u-check input[type="radio"]:checked + .u-check-icon-checkbox-v4,
+.u-check input[type="radio"]:checked + .u-check-icon-radio-v4,
+.u-check input[type="radio"]:checked + * .u-check-icon-checkbox-v4,
+.u-check input[type="radio"]:checked + * .u-check-icon-radio-v4 {
+  color: #3bb18f;
+  border-color: #3bb18f;
+}
+
+/*------------------------------------
+  Sliders v1
+------------------------------------*/
+.u-slider-v1-3.ui-slider .ui-slider-handle {
+  border-color: #3bb18f;
+}
+
+/*------------------------------------
+  Form Control
+------------------------------------*/
+.form-control:focus,
+.custom-select:focus {
+  border-color: #3bb18f;
+}
+
+/*------------------------------------
+  Checked state background
+------------------------------------*/
+/* Primary Colors */
+input[type="checkbox"]:checked + .g-bg-primary--checked,
+input[type="radio"]:checked + .g-bg-primary--checked,
+input[type="checkbox"]:checked + * .g-bg-primary--checked,
+input[type="radio"]:checked + * .g-bg-primary--checked {
+  background-color: #3bb18f !important;
+}
+
+.g-bg-primary--checked.g-checked,
+.g-checked .g-bg-primary--checked {
+  background-color: #3bb18f !important;
+}
