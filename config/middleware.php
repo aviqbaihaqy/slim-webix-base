@@ -1,13 +1,18 @@
 <?php
 
-use App\Middleware\Web\AuthMiddleware;
-use App\Middleware\Web\GuestMiddleware;
-use App\Middleware\Api\AuthMiddleware as AuthApiMiddeleware;
-use App\Middleware\Api\CorsMiddleware;
 use App\Middleware\Api\JwtMiddleware;
+use App\Middleware\Web\AuthMiddleware;
+use App\Middleware\Api\CorsMiddleware;
+use App\Middleware\Web\GuestMiddleware;
+use App\Middleware\Web\BreadCrumbsMiddleware;
+use App\Middleware\Api\AuthMiddleware as AuthApiMiddeleware;
 
 $container['guest.middleware'] = function ($container) {
     return new GuestMiddleware($container['router'], $container['auth']);
+};
+
+$container['breadcrumbs.middleware'] = function ($container) {
+    return new BreadCrumbsMiddleware($container['twig']);
 };
 
 $container['auth.middleware'] = function ($container) {

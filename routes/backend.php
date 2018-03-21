@@ -8,4 +8,6 @@ $app->group('/dashboard', function () {
         $this->get('/masuk', 'dashboard.controller:index')->setName('surat-masuk');
     });
 
-})->add($container['auth.middleware']());
+})
+->add($container['auth.middleware']())
+->add($container['breadcrumbs.middleware']);
