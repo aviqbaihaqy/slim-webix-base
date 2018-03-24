@@ -5,7 +5,7 @@ $app->group('/dashboard', function () {
     $this->get('/my-account', 'dashboard.controller:index')->setName('my-account');
     
     $this->group('/surat', function () {
-        $this->get('/masuk', 'dashboard.controller:index')->setName('surat-masuk');
+        $this->get('/masuk', 'surat.masuk.controller:index')->setName('surat-masuk');
     });
 
 })
