@@ -11,9 +11,9 @@ This is an app skeleton for the Slim PHP Micro-Framework to get started quickly
 - Authentication ([Sentinel](https://github.com/cartalyst/sentinel))
 - Validation ([Respect](https://github.com/Respect/Validation) + [Slim Validation](https://github.com/awurth/slim-validation))
 - Twig templating engine [Slim Twig View](https://github.com/slimphp/Twig-View) with cache and debug
-- CSS Framework [Bootstrap UI] (https://getbootstrap.com/)
-- JS Framework [Webix UI] (https://webix.com/)
-- Admin template [Core UI] (https://coreui.io/)
+- CSS Framework [Bootstrap UI](https://getbootstrap.com/)
+- JS Framework [Webix UI](https://webix.com/)
+- Admin template [Core UI](https://coreui.io/)
 - Helpers for assets management, redirections, ...
 - Logs ([Monolog](https://github.com/Seldaek/monolog))
 - Dotenv configuration
